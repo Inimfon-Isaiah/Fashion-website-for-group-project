@@ -1,0 +1,210 @@
+/* === Root Variables === */
+:root {
+  /* Colors */
+  --color-primary: #222;
+  --color-secondary: #444;
+  --color-accent: #f4f4f4;
+  --color-border: #e0e0e0;
+  --color-hover: #000;
+
+  /* Text */
+  --font-base: 14px;
+  --font-heading: 24px;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+}
+
+/* === Global Reset === */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  color: var(--color-primary);
+}
+
+/* === Top Info Bar === */
+.top-bar {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: var(--font-base);
+}
+
+.top-bar .left span,
+.top-bar .right a,
+.top-bar .left select {
+  margin-right: var(--spacing-sm);
+}
+
+.top-bar .right a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.top-bar .right a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Navbar === */
+.main-navbar {
+  background-color: #fff;
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.main-navbar .logo {
+  font-size: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.main-navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-md);
+  padding: 0;
+  margin: 0;
+}
+
+.main-navbar .nav-links li a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.main-navbar .nav-links li a:hover {
+  color: var(--color-hover);
+}
+
+.main-navbar .nav-icons a {
+  margin-left: var(--spacing-sm);
+}
+
+.main-navbar .nav-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .top-bar,
+  .main-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+
+  .main-navbar .nav-links {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+  }
+
+  .main-navbar .nav-icons {
+    margin-top: var(--spacing-xs);
+  }
+}
+
+/* == Footer == */
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-newsletter {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-newsletter h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--spacing-md);
+  text-align: start;
+}
+
+.footer-newsletter input {
+  padding: var(--spacing-sm);
+  width: 250px;
+  max-width: 80%;
+  color: var(--color-accent);
+  border: solid 1px var(--color-border);
+  background: transparent;
+  margin-right: var(--spacing-sm);
+}
+
+.footer-newsletter button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  color: var(--color-accent);
+  border: solid 1px var(--color-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.footer-links {
+  display: grid;
+  width: 40%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.footer-column h4 {
+  font-size: var(--text-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-column a {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-column {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+}
