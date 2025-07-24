@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f5f5f5;
+    /* padding: 20px; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    border: 3px solid black;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.required-note {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group.double {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group.double .input-wrapper {
+    flex: 1;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #999;
+}
+
+.form-input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-textarea:focus {
+    border-color: #999;
+}
+
+.form-textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.character-count {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+
+    .input-group.double {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+	

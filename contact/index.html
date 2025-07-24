@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
 </head>
 <body>
+    <!-- Include the navbar -->
+    <div id="navbar"></div>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1 class="form-title">CONTACT US</h1>
+            <p class="form-subtitle">Due to a very large number of requests, there may<br>be a delay in our usual response time.</p>
+        </div>
+        
+        <div class="form-body">
+            <p class="required-note">*Mandatory fields</p>
+            
+            <form class="contact-form">
+                <div class="input-group double">
+                    <div class="input-wrapper">
+                        <input type="text" class="form-input" placeholder="FIRST NAME*" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="form-input" placeholder="LAST NAME*" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="email" class="form-input" placeholder="EMAIL*" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="tel" class="form-input" placeholder="PHONE(optional)">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="text" class="form-input" placeholder="ORDER NUMBER(optional)">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="text" class="form-input" placeholder="COUNTRY(optional)">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <textarea class="form-textarea" placeholder="YOUR MESSAGE (optional)" rows="8"></textarea>
+                        <p class="character-count">You have 10000 characters left out of 10000</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     
+    <script src="/shared/inject.js"></script>
 </body>
 </html>
