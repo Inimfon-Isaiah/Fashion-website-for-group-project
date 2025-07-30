@@ -3,67 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - STYLEFORGED</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Include the navbar -->
     <div id="navbar"></div>
 
-    <div class="form-container">
-        <div class="form-header">
-            <h1 class="form-title">CONTACT US</h1>
-            <p class="form-subtitle">Due to a very large number of requests, there may<br>be a delay in our usual response time.</p>
+    <!-- Main Contact Container -->
+    <main class="contact-main">
+        <div class="contact-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">CONTACT STYLEFORGED</h1>
+                <p class="hero-subtitle">We're here to assist you with exceptional service and personalized attention</p>
+            </div>
         </div>
-        
-        <div class="form-body">
-            <p class="required-note">*Mandatory fields</p>
-            
-            <form class="contact-form">
-                <div class="input-group double">
-                    <div class="input-wrapper">
-                        <input type="text" class="form-input" placeholder="FIRST NAME*" required>
+
+        <div class="contact-sections">
+            <!-- Section 1: Contact Information -->
+            <section class="contact-info-section">
+                <div class="section-header">
+                    <h2 class="section-title">GET IN TOUCH</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Our Atelier</h3>
+                            <p>123 Fashion District</p>
+                            <p>Victoria Island, Lagos</p>
+                            <p>Nigeria 101241</p>
+                        </div>
                     </div>
-                    <div class="input-wrapper">
-                        <input type="text" class="form-input" placeholder="LAST NAME*" required>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p class="copyable" data-copy="hello@styleforged.com">hello@styleforged.com</p>
+                            <p class="copyable" data-copy="press@styleforged.com">press@styleforged.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p class="copyable" data-copy="+234 123 456 7890">+234 123 456 7890</p>
+                            <p class="copyable" data-copy="+234 123 456 7891">+234 123 456 7891</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                            <p>Saturday: 10:00 AM - 6:00 PM</p>
+                            <p>Sunday: 12:00 PM - 5:00 PM</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <input type="email" class="form-input" placeholder="EMAIL*" required>
+
+                <div class="social-section">
+                    <h3>Follow Our Journey</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <input type="tel" class="form-input" placeholder="PHONE(optional)">
+            </section>
+
+            <!-- Section 2: Customer Support & General Inquiries -->
+            <section class="support-section">
+                <div class="section-header">
+                    <h2 class="section-title">CUSTOMER SUPPORT</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="support-content">
+                    <div class="support-intro">
+                        <p class="support-text">
+                            Our dedicated customer service team is here to provide you with exceptional support. 
+                            Whether you need assistance with an order, have questions about our products, or require 
+                            styling advice, we're committed to delivering the personalized attention you deserve.
+                        </p>
+                        <p class="support-text">
+                            For immediate assistance, please don't hesitate to reach out through any of our contact 
+                            channels. We typically respond within 24 hours during business days.
+                        </p>
+                    </div>
+
+                    <div class="support-categories">
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Order Support</h4>
+                                <p>Track your order, modify shipping details, or resolve any order-related concerns.</p>
+                            </div>
+                        </div>
+
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Returns & Exchanges</h4>
+                                <p>Easy returns within 30 days. We'll guide you through our hassle-free process.</p>
+                            </div>
+                        </div>
+
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-ruler"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Sizing Assistance</h4>
+                                <p>Get personalized sizing recommendations to ensure the perfect fit for every piece.</p>
+                            </div>
+                        </div>
+
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Media & Press</h4>
+                                <p>Press inquiries, collaboration requests, and media kit access for journalists and influencers.</p>
+                            </div>
+                        </div>
+
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Styling Services</h4>
+                                <p>Personal styling consultations and wardrobe curation by our expert stylists.</p>
+                            </div>
+                        </div>
+
+                        <div class="support-category">
+                            <div class="category-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="category-content">
+                                <h4>Custom Orders</h4>
+                                <p>Bespoke pieces tailored to your specifications with our master craftspeople.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <input type="text" class="form-input" placeholder="ORDER NUMBER(optional)">
+            </section>
+
+            <!-- Section 3: Book an Appointment -->
+            <section class="appointment-section">
+                <div class="section-header">
+                    <h2 class="section-title">BOOK AN APPOINTMENT</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="appointment-content">
+                    <div class="appointment-intro">
+                        <p class="appointment-text">
+                            Experience personalized service at our Lagos atelier. Book a private consultation 
+                            for fittings, styling sessions, or to explore our exclusive collections in an 
+                            intimate setting designed for your comfort.
+                        </p>
+                    </div>
+
+                    <div class="form-container">
+                        <form class="appointment-form" id="appointmentForm" novalidate>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label class="form-label">Appointment Type*</label>
+                                    <div class="select-wrapper">
+                                        <select class="form-select" name="appointmentType" required>
+                                            <option value="">Select appointment type</option>
+                                            <option value="personal-fitting">Personal Fitting</option>
+                                            <option value="custom-order">Custom Order Consultation</option>
+                                            <option value="styling-consult">Personal Styling Session</option>
+                                            <option value="collection-viewing">Private Collection Viewing</option>
+                                            <option value="bridal-consult">Bridal Consultation</option>
+                                            <option value="corporate-styling">Corporate Styling</option>
+                                        </select>
+                                        <i class="fas fa-chevron-down select-arrow"></i>
+                                    </div>
+                                    <span class="error-message" id="appointmentType-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label class="form-label">Full Name*</label>
+                                    <input type="text" class="form-input" name="fullName" placeholder="Enter your full name" required>
+                                    <span class="error-message" id="fullName-error"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label class="form-label">Email Address*</label>
+                                    <input type="email" class="form-input" name="email" placeholder="Enter your email address" required>
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label class="form-label">Phone Number*</label>
+                                    <input type="tel" class="form-input" name="phone" placeholder="Enter your phone number" required>
+                                    <span class="error-message" id="phone-error"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label class="form-label">Preferred Date*</label>
+                                    <input type="date" class="form-input" name="preferredDate" required>
+                                    <span class="error-message" id="preferredDate-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label class="form-label">Preferred Time*</label>
+                                    <div class="select-wrapper">
+                                        <select class="form-select" name="preferredTime" required>
+                                            <option value="">Select preferred time</option>
+                                            <option value="09:00">9:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="13:00">1:00 PM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="15:00">3:00 PM</option>
+                                            <option value="16:00">4:00 PM</option>
+                                            <option value="17:00">5:00 PM</option>
+                                            <option value="18:00">6:00 PM</option>
+                                        </select>
+                                        <i class="fas fa-chevron-down select-arrow"></i>
+                                    </div>
+                                    <span class="error-message" id="preferredTime-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label class="form-label">Additional Notes</label>
+                                    <textarea class="form-textarea" name="message" placeholder="Tell us about your specific needs, preferences, or any questions you have..." rows="5" maxlength="500"></textarea>
+                                    <div class="textarea-footer">
+                                        <span class="character-count" id="characterCount">500 characters remaining</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span class="btn-text">Book Appointment</span>
+                                    <i class="fas fa-calendar-check btn-icon"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="success-message" id="successMessage">
+                            <div class="success-content">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Appointment Request Sent!</h3>
+                                <p>Thank you for your appointment request. Our team will contact you within 24 hours to confirm your booking and provide additional details.</p>
+                                <button class="success-btn" id="bookAnotherBtn">Book Another Appointment</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <input type="text" class="form-input" placeholder="COUNTRY(optional)">
-                    </div>
-                </div>
-                
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <textarea class="form-textarea" placeholder="YOUR MESSAGE (optional)" rows="8"></textarea>
-                        <p class="character-count">You have 10000 characters left out of 10000</p>
-                    </div>
-                </div>
-            </form>
+            </section>
         </div>
-    </div>
+    </main>
     
     <script src="/shared/inject.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
