@@ -16,7 +16,7 @@ This is a fashion e-commerce website that allows users to browse, shop, and expl
 
 ## Installation
 1. Clone the repository
-2. Open index.html in your browser
+2. Open home-page/index.html in your browser
 3. Start exploring the fashion collection
 
 ## Usage
