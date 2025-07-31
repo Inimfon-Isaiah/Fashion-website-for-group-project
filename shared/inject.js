@@ -3,6 +3,19 @@ const fetchNavbar = fetch('/shared/navbar.html')
   .then(res => res.text())
   .then(data => document.getElementById('navbar').innerHTML = data);
 
+  // Active state to navbar for all web pages
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelector('.nav-links li a');
+
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    if (linkPath === currentPath) {
+      link.classList.add('active');
+    }
+  });
+});
+
 const fetchFooter = fetch('/shared/footer.html')
   .then(res => res.text())
   .then(data => {
@@ -59,4 +72,5 @@ const fetchMarquee = fetch('/shared/marquee.html')
   document.addEventListener('DOMContentLoaded', function () {
   document.body.classList.add('page-loaded');
 });
+
 

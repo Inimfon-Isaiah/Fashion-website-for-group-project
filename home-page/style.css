@@ -83,6 +83,7 @@
 }
 
 .cta-button {
+    display: inline-block;
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding: var(--spacing-sm) var(--spacing-xl);
@@ -91,6 +92,7 @@
     font-weight: var(--font-weight-bold);
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .cta-button:hover {
@@ -135,9 +137,9 @@
   100% { opacity: 0; z-index: 0; }
 }
 
-.carousel-autoplay:hover .slide {
+/* .carousel-autoplay:hover .slide {
   animation-play-state: paused;
-}
+} */
 
 
 
@@ -165,7 +167,7 @@
     color: var(--color-accent);
 }
 
-.products-grid {
+/* .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-xl);
@@ -235,8 +237,6 @@
   transition: all 0.3s ease;
 }
 
-
-
 .favorite-btn i {
   font-family: "Font Awesome 5 Free";
   font-weight: var(--font-weight-normal);
@@ -279,7 +279,7 @@
     font-size: var(--font-base);
     color: var(--color-accent);
     text-decoration: line-through;
-}
+} */
 
 .show-more-container {
     text-align: center;
@@ -294,6 +294,7 @@
     font-weight: var(--font-weight-bold);
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .show-more-btn:hover {

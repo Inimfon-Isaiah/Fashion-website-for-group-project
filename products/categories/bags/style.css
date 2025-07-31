@@ -1,12 +1,36 @@
+
+main {
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
 .collection {
   padding: 2rem;
 }
 
-.collection h2 {
-  margin-bottom: 1.5rem;
+.hero {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 0px auto 40px auto;
+  background: linear-gradient(to right, #111, #444);
+  color: white
+}
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.product-grid {
+.page-intro {
+font-size: 16px;
+color: #ccc;
+max-width: 600px;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+/* .product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -44,4 +68,4 @@
 .discount {
   color: green;
   font-weight: bold;
-}
+} */

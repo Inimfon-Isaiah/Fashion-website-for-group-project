@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,121 +12,306 @@
 <body>
   <!-- Navbar -->
   <div id="navbar"></div>
+  <header class="hero">
+    <h2>Bags</h2>
+    <p class="page-intro">
+      Discover our exclusive backpack collection — crafted for style, comfort, and durability.
+      From everyday essentials to travel-ready designs, find the perfect companion for every journey.
+    </p>
+
+  </header>
 
   <!-- Main Content -->
   <main>
-    <section class="collection">
-      <header class="collection-header">
-        <h1>Collections</h1>
-        <h2>Bags</h2>
-      </header>
-
-      <div class="product-grid">
-        <!-- Product Card -->
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image1.jpg" alt="JanSport Backpack" />
-          <h3>JanSport Backpack</h3>
-          <p><span class="price">NGN 21,983.00</span> <span class="old-price">NGN 43,966.44</span></p>
-          <p class="discount">50% off</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image1.jpg" alt="JanSport Backpack" class="product-image" />
+          <div class="discount-badge">50% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
         </div>
 
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image2.jpg" alt="School Backpack" />
-          <h3>School Backpack</h3>
-          <p><span class="price">NGN 43,983.00</span></p>
+        <div class="product-info">
+          <h3 class="product-title">JanSport Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 21,983</span>
+            <span class="original-price">NGN 43,966</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
         </div>
 
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image3.jpg" alt="Compact Backpack" />
-          <h3>Compact Backpack</h3>
-          <p><span class="price">NGN 45,450.00</span> <span class="old-price">NGN 101,000.00</span></p>
-          <p class="discount">45% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image4.jpg" alt="Targus Laptop Bag" />
-          <h3>Targus Laptop Bag</h3>
-          <p><span class="price">NGN 21,983.00</span></p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image5.jpg" alt="JanSport Big Student Backpack" />
-          <h3>JanSport Big Student Backpack</h3>
-          <p><span class="price">NGN 14,069.26</span> <span class="old-price">NGN 43,966.44</span></p>
-          <p class="discount">32% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image6.jpg" alt="Fjallraven Re-Kanken Backpack" />
-          <h3>Fjallraven Re-Kanken Backpack</h3>
-          <p><span class="price">NGN 49,000.00</span> <span class="old-price">NGN 70,000.00</span></p>
-          <p class="discount">30% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image7.jpg" alt="Laptop Backpack" />
-          <h3>Laptop Backpack</h3>
-          <p><span class="price">NGN 45,000.00</span> <span class="old-price">NGN 50,000.00</span></p>
-          <p class="discount">10% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image8.jpg" alt="Messenger Backpack" />
-          <h3>Messenger Backpack</h3>
-          <p><span class="price">NGN 49,500.00</span> <span class="old-price">NGN 55,000.00</span></p>
-          <p class="discount">10% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image9.jpg" alt="Portfolio Bag" />
-          <h3>Portfolio Bag</h3>
-          <p><span class="price">NGN 85,000.00</span></p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image10.jpg" alt="Sleeve Case" />
-          <h3>Sleeve Case</h3>
-          <p><span class="price">NGN 47,500.00</span> <span class="old-price">NGN 50,000.00</span></p>
-          <p class="discount">5% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image11.jpg" alt="Laptop Backpack" />
-          <h3>Laptop Backpack</h3>
-          <p><span class="price">NGN 49,000.00</span> <span class="old-price">NGN 70,000.00</span></p>
-          <p class="discount">30% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image12.jpg" alt="Eco Tote Bag" />
-          <h3>Eco Tote Bag</h3>
-          <p><span class="price">NGN 57,650.00</span></p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image13.jpg" alt="Canvas Duffel Bag" />
-          <h3>Canvas Duffel Bag</h3>
-          <p><span class="price">NGN 38,500.00</span> <span class="old-price">NGN 55,000.00</span></p>
-          <p class="discount">30% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image14.jpg" alt="Base Camp Duffel" />
-          <h3>Base Camp Duffel</h3>
-          <p><span class="price">NGN 40,000.00</span> <span class="old-price">NGN 80,000.00</span></p>
-          <p class="discount">50% off</p>
-        </div>
-
-        <div class="product-card">
-          <img src="../../../assets/images/bags-img/image15.jpg" alt="Canvas Tote" />
-          <h3>Canvas Tote</h3>
-          <p><span class="price">NGN 50,000.00</span></p>
-        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('JanSport Backpack')">
+          Add to Cart
+        </button>
       </div>
-    </section>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image2.jpg" alt="School Backpack" class="product-image" />
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">School Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 43,983</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('School Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image3.jpg" alt="Compact Backpack" class="product-image" />
+          <div class="discount-badge">45% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Compact Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 45,450</span>
+            <span class="original-price">NGN 101,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Compact Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image4.JPG" alt="Targus Laptop Bag" class="product-image" />
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Targus Laptop Bag</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 21,983</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Targus Laptop Bag')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image5.JPG" alt="JanSport Big Student Backpack" class="product-image" />
+          <div class="discount-badge">32% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">JanSport Big Student Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 14,069</span>
+            <span class="original-price">NGN 43,966</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('JanSport Big Student Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image6.JPG" alt="Fjallraven Re-Kanken Backpack" class="product-image" />
+          <div class="discount-badge">30% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Fjallraven Re-Kanken Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 49,000</span>
+            <span class="original-price">NGN 70,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Fjallraven Re-Kanken Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image7.JPG" alt="Laptop Backpack" class="product-image" />
+          <div class="discount-badge">10% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Laptop Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 45,000</span>
+            <span class="original-price">NGN 50,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Laptop Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image8.JPG" alt="Messenger Backpack" class="product-image" />
+          <div class="discount-badge">10% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Messenger Backpack</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 49,500</span>
+            <span class="original-price">NGN 55,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Messenger Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image9.JPG" alt="Portfolio Bag" class="product-image" />
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Portfolio Bag</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 85,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Portfolio Bag')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image10.JPG" alt="Sleeve Case" class="product-image" />
+          <div class="discount-badge">5% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Sleeve Case</h3>
+          <p class="desc">Sharp looks, serious street power.</p>
+          <div class="product-prices">
+            <span class="current-price">NGN 47,500</span>
+            <span class="original-price">NGN 50,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Sleeve Case')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image11.JPG" alt="Laptop Backpack" class="product-image" />
+          <div class="discount-badge">30% OFF</div>
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Laptop Backpack</h3>
+          <p class="desc">Night-fit comfort with race vibes.</p>
+          <div class="product-prices">
+            <span class="current-price">NGN 49,000</span>
+            <span class="original-price">NGN 70,000</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Laptop Backpack')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="../../../assets/images/bags-img/image12.JPG" alt="Eco Tote Bag" class="product-image" />
+          <label class="favorite-wrapper">
+            <input type="checkbox" class="favorite-checkbox" />
+            <span class="favorite-btn"><i class="far fa-heart"></i></span>
+          </label>
+        </div>
+
+        <div class="product-info">
+          <h3 class="product-title">Eco Tote Bag</h3>
+          <div class="product-prices">
+            <span class="current-price">NGN 53,900</span>
+          </div>
+          <p class="rating">⭐⭐⭐⭐</p>
+        </div>
+
+        <button class="add-to-cart-btn" onclick="addToCart('Eco Tote Bag')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
   </main>
 
   <!-- Footer Scripts -->
   <script src="../../../shared/inject.js"></script>
 </body>
+
 </html>
